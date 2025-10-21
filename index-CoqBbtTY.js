@@ -16604,7 +16604,7 @@ function ou({
 function OE({
     onLogin: a
 }) {
-    const [r, s] = x.useState("demo"), [c, u] = x.useState("demo"), d = () => {
+    const [r, s] = x.useState("bobi"), [c, u] = x.useState(""), d = () => {
         r && c && a()
     };
     return f.jsx("div", {
