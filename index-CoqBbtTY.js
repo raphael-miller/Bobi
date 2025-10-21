@@ -17250,8 +17250,8 @@ for (const pole in T) {
       size: "sm",
       onClick: playQuack,
       children: [
-        f.jsx("span", { className: "mr-2", children: "🦆" }),
-        "Quack"
+        f.jsx("span", { className: "mr-2"}),
+        "🦆"
       ]
     }),
 // jusqu'ici
