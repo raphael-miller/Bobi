@@ -17181,7 +17181,7 @@ for (const pole in T) {
         label: "Textuel",
         icon: BS
     }] 
-    const U = ["YouTube", "LinkedIn", "TikTok", "Instagram", "Facebook", "Twitter"], w = () => {
+    const U = ["YouTube : 1920x1080, 20s", "LinkedIn : 1200x627, 20s", "TikTok : 1080x1920, 20s", "Instagram : 1080x1350, 20s", "Facebook : 1080x1080, 20s", "Twitter : 1200x1200, 15s"], w = () => {
         const V = JSON.parse(JSON.stringify(b[u]));
         V.id = Math.max(...b.map(Y => Y.id)) + 1, A([...b, V]), d(b.length)
     } 
@@ -17250,8 +17250,8 @@ for (const pole in T) {
       size: "sm",
       onClick: playQuack,
       children: [
-        f.jsx("span", { className: "mr-2"}),
-        "🦆"
+        f.jsx("span", { className: "mr-2", children: "🦆" }),
+        "Quack"
       ]
     }),
 // jusqu'ici
@@ -17442,7 +17442,8 @@ for (const pole in T) {
                                 children: [f.jsx(NS, {
                                     className: "w-4 h-4 text-blue-600"
                                 }), "Sélection des produits"]
-                            }), f.jsx("div", {
+                            }), 
+                            f.jsx("div", {
                                 className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4",
                                 children: q.products.map((V, Y) => f.jsxs("div", {
                                     className: "space-y-2",
@@ -17455,20 +17456,23 @@ for (const pole in T) {
                                             placeholder: `Référence produit ${Y+1}...`,
                                             value: V,
                                             onChange: Z => M(Y, Z.target.value)
-                                        }), f.jsxs(Je, {
+                                        }), 
+                                        f.jsxs(Je, {
                                             variant: "outline",
                                             size: "sm",
                                             className: "w-full",
                                             children: [f.jsx(iu, {
                                                 className: "w-3 h-3 mr-2"
-                                            }), "Upload image"]
-                                        }), V && f.jsxs("div", {
+                                            }), "Upload media"]
+                                        }), 
+                                        V && f.jsxs("div", {
                                             className: "space-y-2",
                                             children: [f.jsx(ze, {
-                                                placeholder: "Titre du produit...",
+                                                placeholder: "Titre du média...",
                                                 className: "text-xs"
-                                            }), f.jsx(vt, {
-                                                placeholder: "Description...",
+                                            }), 
+                                            f.jsx(vt, {
+                                                placeholder: "Description, caractéristiques...",
                                                 rows: 2,
                                                 className: "text-xs"
                                             })]
@@ -17574,8 +17578,8 @@ for (const pole in T) {
                                 className: "w-4 h-4 mr-2"
                             }), "Sauvegarder comme preset"]
                         }), f.jsxs(Je, {
-                            variant: "outline",
                             onClick: w,
+                            className: "bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700",
                             children: [f.jsx(RS, {
                                 className: "w-4 h-4 mr-2"
                             }), "Ajouter un brief"]
@@ -17660,8 +17664,7 @@ for (const pole in T) {
                                     className: "w-4 h-4 mr-2"
                                 }), "Éditer"]
                             }), f.jsxs(Je, {
-                                variant: "outline",
-                                className: "flex-1",
+                                className: "bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700",
                                 children: [f.jsx(cS, {
                                     className: "w-4 h-4 mr-2"
                                 }), "Télécharger"]
